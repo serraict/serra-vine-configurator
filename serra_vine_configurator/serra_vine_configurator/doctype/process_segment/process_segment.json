@@ -7,19 +7,26 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "description"
+  "description",
+  "parent_segment"
  ],
  "fields": [
   {
    "fieldname": "description",
    "fieldtype": "Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "parent_segment",
+   "fieldtype": "Link",
+   "label": "Parent",
+   "options": "Process Segment"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-09 16:54:05.253055",
+ "modified": "2025-04-09 17:22:09.329297",
  "modified_by": "Administrator",
  "module": "Serra Vine Configurator",
  "name": "Process Segment",
