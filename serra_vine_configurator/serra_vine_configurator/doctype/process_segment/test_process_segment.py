@@ -1,7 +1,7 @@
 # Copyright (c) 2025, Serra ICT and Contributors
 # See license.txt
 
-# import frappe
+import frappe
 from frappe.tests import IntegrationTestCase, UnitTestCase
 
 
@@ -17,8 +17,16 @@ class UnitTestProcessSegment(UnitTestCase):
 	Unit tests for ProcessSegment.
 	Use this class for testing individual functions and methods.
 	"""
+	def test_equality(self):
+		"""Test equality of ProcessSegment instances."""
+		# Create two instances of ProcessSegment
+		process_segment1 = frappe.get_doc({"doctype": "Process Segment", "name": "Test Segment 1"})
+		process_segment2 = frappe.get_doc({"doctype": "Process Segment", "name": "Test Segment 2"})
 
-	pass
+		# Check if they are equal
+		self.assertEqual(process_segment1, process_segment1)
+		self.assertEqual(process_segment2, process_segment2)
+		self.assertNotEqual(process_segment1, process_segment2)
 
 
 class IntegrationTestProcessSegment(IntegrationTestCase):
