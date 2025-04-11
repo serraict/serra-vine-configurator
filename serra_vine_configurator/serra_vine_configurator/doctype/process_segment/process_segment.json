@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "description",
-  "parent_segment"
+  "parent_segment",
+  "parameters"
  ],
  "fields": [
   {
@@ -21,12 +22,18 @@
    "fieldtype": "Link",
    "label": "Parent",
    "options": "Process Segment"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Process Segment Parameter"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-09 17:22:09.329297",
+ "modified": "2025-04-11 11:49:19.322910",
  "modified_by": "Administrator",
  "module": "Serra Vine Configurator",
  "name": "Process Segment",
