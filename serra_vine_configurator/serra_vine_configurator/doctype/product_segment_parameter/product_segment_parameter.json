@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-04-22 17:16:55.882994",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "value",
+  "unit_of_measure",
+  "process_segment_parameter"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Text",
+   "label": "Value"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Text",
+   "label": "Unit of Measure"
+  },
+  {
+   "fieldname": "process_segment_parameter",
+   "fieldtype": "Link",
+   "label": "Process Segment Parameter",
+   "options": "Process Segment Parameter"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-23 13:00:19.551741",
+ "modified_by": "Administrator",
+ "module": "Serra Vine Configurator",
+ "name": "Product Segment Parameter",
+ "naming_rule": "Autoincrement",
+ "owner": "marijn@serraict.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
